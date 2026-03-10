@@ -50,12 +50,12 @@ export default function LandingPage() {
             { text: "Book Your Mark", onClick: handleBooking },
             { text: "View Gallery", href: "gallery" }
           ]}
-          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AlavLWOelEmQkqFRvw6DCMXOiw/uploaded-1773171676236-ae47sr53.png"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AlavLWOelEmQkqFRvw6DCMXOiw/uploaded-1773180784484-bndqftnj.png"
           imageAlt="Cursemarks Tattoo Studio"
           buttonAnimation="slide-up"
           showDimOverlay={false}
           titleClassName="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight"
-          imageClassName="hidden md:block"
+          imageClassName="block md:hidden"
         />
       </div>
 
