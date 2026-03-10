@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
-import HeroLogoBillboard from '@/components/sections/hero/HeroLogoBillboard';
+import HeroOverlay from '@/components/sections/hero/HeroOverlay';
 import TeamCardSix from '@/components/sections/team/TeamCardSix';
 import FeatureHoverPattern from '@/components/sections/feature/featureHoverPattern/FeatureHoverPattern';
 import ContactFaq from '@/components/sections/contact/ContactFaq';
@@ -41,19 +41,18 @@ export default function LandingPage() {
       </div>
 
       <div id="hero" data-section="hero">
-        <HeroLogoBillboard
-          logoText=""
-          description="Marks that stay. Stories that haunt."
+        <HeroOverlay
+          title="Marks that stay. Stories that haunt."
+          description="Premium tattoo studio specializing in blackwork, fine line, gothic, and curse-inspired designs."
           buttons={[
             { text: "Book Your Mark", href: "booking" },
             { text: "View Gallery", href: "gallery" }
           ]}
-          background={{ variant: "plain" }}
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AlavLWOelEmQkqFRvw6DCMXOiw/uploaded-1773171676236-ae47sr53.png"
-          imageAlt="Cursemarks Tattoo Studio Logo"
+          imageAlt="Cursemarks Tattoo Studio"
           mediaAnimation="slide-up"
-          frameStyle="card"
           buttonAnimation="slide-up"
+          overlayOpacity={0.5}
         />
       </div>
 
