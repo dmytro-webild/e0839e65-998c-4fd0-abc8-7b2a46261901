@@ -50,9 +50,8 @@ export default function LandingPage() {
           ]}
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AlavLWOelEmQkqFRvw6DCMXOiw/uploaded-1773171676236-ae47sr53.png"
           imageAlt="Cursemarks Tattoo Studio"
-          mediaAnimation="slide-up"
           buttonAnimation="slide-up"
-          overlayOpacity={0.5}
+          showDimOverlay={false}
         />
       </div>
 
