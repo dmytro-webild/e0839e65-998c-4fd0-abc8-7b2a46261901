@@ -155,8 +155,8 @@ export default function LandingPage() {
         <AboutMetric
           title="Cursemarks is a premium tattoo studio dedicated to meaningful body art, dark aesthetics, and artistic excellence. Every mark carries intention."
           metrics={[
-            { icon: Users, label: "Satisfied Clients", value: "2000+" },
-            { icon: Award, label: "Years of Mastery", value: "45+" },
+            { icon: Users, label: "Satisfied Clients", value: "100+" },
+            { icon: Award, label: "5 Stars Reviews ", value: "100+ " },
             { icon: Zap, label: "Original Designs", value: "5000+" },
             { icon: Heart, label: "Marks That Matter", value: "Every One" }
           ]}
