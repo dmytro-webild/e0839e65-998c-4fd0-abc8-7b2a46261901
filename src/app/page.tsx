@@ -55,8 +55,8 @@ export default function LandingPage() {
           buttonAnimation="slide-up"
           showDimOverlay={false}
           titleClassName="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight"
-          imageClassName="block md:hidden w-full h-full object-cover"
-          mediaWrapperClassName="hidden md:flex w-full h-full"
+          imageClassName="w-full h-full object-cover"
+          mediaWrapperClassName="w-full h-full"
         />
       </div>
 
