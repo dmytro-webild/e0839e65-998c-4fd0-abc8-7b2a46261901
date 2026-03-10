@@ -42,7 +42,7 @@ export default function LandingPage() {
 
       <div id="hero" data-section="hero">
         <HeroLogoBillboard
-          logoText="asset://logo"
+          logoText="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AlavLWOelEmQkqFRvw6DCMXOiw/uploaded-1773171676236-ae47sr53.png"
           description="Marks that stay. Stories that haunt."
           buttons={[
             { text: "Book Your Mark", href: "booking" },
