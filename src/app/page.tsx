@@ -3,14 +3,13 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
 import HeroOverlay from '@/components/sections/hero/HeroOverlay';
-import TeamCardSix from '@/components/sections/team/TeamCardSix';
 import FeatureHoverPattern from '@/components/sections/feature/featureHoverPattern/FeatureHoverPattern';
 import ContactFaq from '@/components/sections/contact/ContactFaq';
 import AboutMetric from '@/components/sections/about/AboutMetric';
 import FaqDouble from '@/components/sections/faq/FaqDouble';
-import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
+import TestimonialCardFifteen from '@/components/sections/testimonial/TestimonialCardFifteen';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import { Award, Calendar, Crown, Eye, Feather, Heart, Moon, Shield, Skull, Users, Zap, Image } from 'lucide-react';
+import { Award, Calendar, Crown, Eye, Feather, Heart, Moon, Shield, Skull, Users, Zap, Image, Star } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -29,7 +28,6 @@ export default function LandingPage() {
       <div id="nav" data-section="nav">
         <NavbarStyleCentered
           navItems={[
-            { name: "Artists", id: "artists" },
             { name: "Gallery", id: "gallery" },
             { name: "About", id: "about" },
             { name: "Aftercare", id: "aftercare" },
@@ -52,32 +50,6 @@ export default function LandingPage() {
           imageAlt="Cursemarks Tattoo Studio"
           buttonAnimation="slide-up"
           showDimOverlay={false}
-        />
-      </div>
-
-      <div id="artists" data-section="artists">
-        <TeamCardSix
-          title="Our Artists"
-          description="Master tattoo artists specializing in blackwork, fine line, gothic, and curse-inspired designs."
-          members={[
-            {
-              id: "1",              name: "Sable",              role: "Lead Artist | Blackwork Specialist",              imageSrc: "http://img.b2bpic.net/free-photo/senior-artist-studio-painting-with-watercolor_23-2150214807.jpg",              imageAlt: "professional tattoo artist portrait studio"
-            },
-            {
-              id: "2",              name: "Raven",              role: "Fine Line & Occult",              imageSrc: "http://img.b2bpic.net/free-photo/craft-beer-concept-with-tattooed-man_23-2148111207.jpg",              imageAlt: "male tattoo artist portrait professional"
-            },
-            {
-              id: "3",              name: "Ash",              role: "Gothic & Curse Designs",              imageSrc: "http://img.b2bpic.net/free-photo/dilligent-focused-tattoo-artist-is-creating-new-tattoo-young-woman-s-hand-tatao-studio_613910-19581.jpg",              imageAlt: "female tattoo artist occult symbolism"
-            },
-            {
-              id: "4",              name: "Vex",              role: "Dark Art & Symbolism",              imageSrc: "http://img.b2bpic.net/free-photo/close-up-portrait-tattooed-male-barber-cuts-beard-black-male_613910-1462.jpg",              imageAlt: "tattoo artist dark studio atmosphere"
-            }
-          ]}
-          gridVariant="uniform-all-items-equal"
-          animationType="slide-up"
-          textboxLayout="default"
-          useInvertedBackground={false}
-          uniformGridCustomHeightClasses="min-h-95 2xl:min-h-105"
         />
       </div>
 
@@ -151,6 +123,25 @@ export default function LandingPage() {
         />
       </div>
 
+      <div id="testimonials" data-section="testimonials">
+        <TestimonialCardFifteen
+          testimonial="Getting my curse mark at Cursemarks was transformative. The artists understood my vision perfectly and executed it with incredible precision. Every detail carries meaning."
+          rating={5}
+          author="Morgan, Collector"
+          avatars={[
+            { src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop", alt: "Avatar 1" },
+            { src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop", alt: "Avatar 2" },
+            { src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop", alt: "Avatar 3" },
+            { src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop", alt: "Avatar 4" },
+            { src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop", alt: "Avatar 5" },
+            { src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop", alt: "Avatar 6" }
+          ]}
+          ratingAnimation="slide-up"
+          avatarsAnimation="slide-up"
+          useInvertedBackground={false}
+        />
+      </div>
+
       <div id="about" data-section="about">
         <AboutMetric
           title="Cursemarks is a premium tattoo studio dedicated to meaningful body art, dark aesthetics, and artistic excellence. Every mark carries intention."
@@ -212,7 +203,6 @@ export default function LandingPage() {
             {
               title: "Studio",              items: [
                 { label: "Home", href: "hero" },
-                { label: "Artists", href: "artists" },
                 { label: "Gallery", href: "gallery" },
                 { label: "About", href: "about" }
               ]
