@@ -10,7 +10,7 @@ import AboutMetric from '@/components/sections/about/AboutMetric';
 import FaqDouble from '@/components/sections/faq/FaqDouble';
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import { Award, Calendar, Crown, Eye, Feather, Heart, Moon, Shield, Skull, Users, Zap, Image } from 'lucide-react';
+import { Award, Calendar, Crown, Eye, Feather, Heart, Moon, Shield, Skull, Users, Zap, MapPin, Image } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -201,6 +201,22 @@ export default function LandingPage() {
           animationType="smooth"
           tag="Healing"
           tagIcon={Shield}
+        />
+      </div>
+
+      <div id="contact" data-section="contact">
+        <SocialProofOne
+          title="Location & Contact"
+          description="Find us in the heart of the city, where ink meets intention. Reach out to book your mark."
+          textboxLayout="default"
+          useInvertedBackground={false}
+          tag="Studio"
+          tagIcon={MapPin}
+          names={[
+            "📍 123 Shadow Street, Downtown District",            "📞 (787) 904-9854",            "📧 cursemarkztattoo@gmail.com",            "🕐 Tue-Sat: 12pm-9pm | Sun: 1pm-6pm"
+          ]}
+          speed={30}
+          showCard={true}
         />
       </div>
 
