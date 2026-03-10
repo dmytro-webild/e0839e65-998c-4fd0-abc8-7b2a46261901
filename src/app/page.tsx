@@ -12,6 +12,10 @@ import FooterBase from '@/components/sections/footer/FooterBase';
 import { Award, Calendar, Crown, Eye, Feather, Heart, Moon, Shield, Skull, Users, Zap, Image, Star } from 'lucide-react';
 
 export default function LandingPage() {
+  const handleBooking = () => {
+    window.open('https://wa.me/7879049854', '_blank');
+  };
+
   return (
     <ThemeProvider
       defaultButtonVariant="bounce-effect"
@@ -33,7 +37,7 @@ export default function LandingPage() {
             { name: "Aftercare", id: "aftercare" },
             { name: "Contact", id: "contact" }
           ]}
-          button={{ text: "Book Appointment", href: "booking" }}
+          button={{ text: "Book Appointment", onClick: handleBooking }}
           brandName="Cursemarks"
         />
       </div>
@@ -43,7 +47,7 @@ export default function LandingPage() {
           title="Marks that stay. Stories that haunt."
           description="Premium tattoo studio specializing in blackwork, fine line, gothic, and curse-inspired designs."
           buttons={[
-            { text: "Book Your Mark", href: "booking" },
+            { text: "Book Your Mark", onClick: handleBooking },
             { text: "View Gallery", href: "gallery" }
           ]}
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AlavLWOelEmQkqFRvw6DCMXOiw/uploaded-1773171676236-ae47sr53.png"
@@ -96,11 +100,11 @@ export default function LandingPage() {
         <ContactFaq
           ctaTitle="Ready to Get Marked?"
           ctaDescription="Schedule a consultation with one of our artists. Let's discuss your vision and bring it to life."
-          ctaButton={{ text: "Book a Session", href: "#booking" }}
+          ctaButton={{ text: "Book a Session", onClick: handleBooking }}
           ctaIcon={Calendar}
           faqs={[
             {
-              id: "1",              title: "How do I book an appointment?",              content: "Contact us via email or phone to discuss your design idea, preferred artist, and availability. We'll guide you through the booking process and answer any questions about the design, size, and placement."
+              id: "1",              title: "How do I book an appointment?",              content: "Contact us via WhatsApp to discuss your design idea, preferred artist, and availability. We'll guide you through the booking process and answer any questions about the design, size, and placement."
             },
             {
               id: "2",              title: "What is your cancellation policy?",              content: "Cancellations made 48 hours in advance receive a full refund. Late cancellations or no-shows forfeit the deposit. We understand life happens—reach out if you need to reschedule."
