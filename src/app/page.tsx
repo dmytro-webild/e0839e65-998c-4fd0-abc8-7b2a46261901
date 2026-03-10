@@ -213,7 +213,7 @@ export default function LandingPage() {
           tag="Studio"
           tagIcon={MapPin}
           names={[
-            "📍 123 Shadow Street, Downtown District",            "📞 (555) 867-5309",            "📧 marks@cursemarks.studio",            "🕐 Tue-Sat: 12pm-9pm | Sun: 1pm-6pm"
+            "📍 123 Shadow Street, Downtown District",            "📞 (787) 904-9854",            "📧 cursemarkztattoo@gmail.com",            "🕐 Tue-Sat: 12pm-9pm | Sun: 1pm-6pm"
           ]}
           speed={30}
           showCard={true}
