@@ -125,9 +125,9 @@ export default function LandingPage() {
 
       <div id="testimonials" data-section="testimonials">
         <TestimonialCardFifteen
-          testimonial="Getting my curse mark at Cursemarks was transformative. The artists understood my vision perfectly and executed it with incredible precision. Every detail carries meaning."
+          testimonial="Getting my own mark at Cursemarks was transformative. The artists understood my vision perfectly and executed it with incredible precision. Every detail carries meaning."
           rating={5}
-          author="Morgan, Collector"
+          author="Elian Vázquez "
           avatars={[
             { src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop", alt: "Avatar 1" },
             { src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop", alt: "Avatar 2" },
