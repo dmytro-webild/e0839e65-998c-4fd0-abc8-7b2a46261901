@@ -42,7 +42,7 @@ export default function LandingPage() {
 
       <div id="hero" data-section="hero">
         <HeroLogoBillboard
-          logoText="Cursemarks Tattoo"
+          logoText="asset://logo"
           description="Marks that stay. Stories that haunt."
           buttons={[
             { text: "Book Appointment", href: "booking" },
