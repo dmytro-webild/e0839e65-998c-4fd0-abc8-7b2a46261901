@@ -1,51 +1,46 @@
-"use client";
-
-import { memo } from "react";
-import useSvgTextLogo from "./useSvgTextLogo";
-import { cls } from "@/lib/utils";
+import React from 'react';
 
 interface SvgTextLogoProps {
-  logoText: string;
-  adjustHeightFactor?: number;
-  verticalAlign?: "top" | "center";
+  text: string;
   className?: string;
+  fontSize?: number;
+  fontWeight?: number | string;
+  letterSpacing?: number;
+  dominantBaseline?: 'auto' | 'baseline' | 'before-edge' | 'hanging' | 'middle' | 'after-edge' | 'text-after-edge' | 'ideographic' | 'mathematical' | 'inherit';
 }
 
-const SvgTextLogo = memo<SvgTextLogoProps>(function SvgTextLogo({
-  logoText,
-  adjustHeightFactor,
-  verticalAlign = "top",
-  className = "",
-}) {
-  const { svgRef, textRef, viewBox, aspectRatio } = useSvgTextLogo(logoText, false, adjustHeightFactor);
-
+const SvgTextLogo: React.FC<SvgTextLogoProps> = ({
+  text,
+  className = '',
+  fontSize = 48,
+  fontWeight = 700,
+  letterSpacing = 2,
+  dominantBaseline = 'middle',
+}) => {
   return (
     <svg
-      ref={svgRef}
-      viewBox={viewBox}
-      className={cls("w-full", className)}
-      style={{ aspectRatio: aspectRatio }}
-      preserveAspectRatio="none"
+      viewBox="0 0 1000 200"
+      width="100%"
+      height="auto"
+      className={className}
       role="img"
-      aria-label={`${logoText} logo`}
+      aria-label={text}
     >
       <text
-        ref={textRef}
-        x="0"
-        y={verticalAlign === "center" ? "50%" : "0"}
-        className="font-bold fill-current"
-        style={{
-          fontSize: "20px",
-          letterSpacing: "-0.02em",
-          dominantBaseline: verticalAlign === "center" ? "middle" : "text-before-edge"
-        }}
+        x="50%"
+        y="50%"
+        textAnchor="middle"
+        dominantBaseline={dominantBaseline}
+        fontSize={fontSize}
+        fontWeight={fontWeight}
+        letterSpacing={letterSpacing}
+        fill="currentColor"
+        className="font-sans"
       >
-        {logoText}
+        {text}
       </text>
     </svg>
   );
-});
-
-SvgTextLogo.displayName = "SvgTextLogo";
+};
 
 export default SvgTextLogo;
