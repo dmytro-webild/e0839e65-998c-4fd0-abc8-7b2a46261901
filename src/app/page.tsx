@@ -139,7 +139,7 @@ export default function LandingPage() {
               id: "4",              title: "What areas do you specialize in?",              content: "We specialize in blackwork, fine line, gothic, and curse-inspired designs. Our artists are experienced across all body placements and can advise on sizing and positioning for optimal results."
             },
             {
-              id: "5",              title: "How much does a tattoo cost?",              content: "Pricing depends on size, complexity, and placement. Simple designs start at $150. Custom work is quoted after consultation. A deposit secures your appointment."
+              id: "5",              title: "How much does a tattoo cost?",              content: "Pricing depends on size, complexity, and placement. Simple designs start at $90. Custom work is quoted after consultation. A deposit secures your appointment."
             },
             {
               id: "6",              title: "What should I expect during my session?",              content: "Your artist will finalize the design, prepare the area, and begin the tattoo. Sessions typically last 1-4 hours depending on the design. You'll receive aftercare instructions to ensure proper healing."
