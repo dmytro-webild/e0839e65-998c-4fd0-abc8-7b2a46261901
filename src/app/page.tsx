@@ -13,7 +13,7 @@ import { Award, Calendar, Crown, Eye, Feather, Heart, Moon, Shield, Skull, Users
 
 export default function LandingPage() {
   const handleBooking = () => {
-    window.open('https://wa.me/7879049854', '_blank');
+    window.open('https://wa.me/message/JW75UAKA6SF2O1', '_blank');
   };
 
   return (
