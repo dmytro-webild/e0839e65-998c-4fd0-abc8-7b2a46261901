@@ -69,7 +69,7 @@ export default function LandingPage() {
               id: "2",              name: "Raven",              role: "Fine Line & Occult",              imageSrc: "http://img.b2bpic.net/free-photo/craft-beer-concept-with-tattooed-man_23-2148111207.jpg",              imageAlt: "male tattoo artist portrait professional"
             },
             {
-              id: "3",              name: "Ash",              role: "Gothic & Curse Designs",              imageSrc: "http://img.b2bpic.net/free-photo/dilligent-focused-tattoo-artist-is-creating-new-tattoo-young-woman-s-hand-tatoo-studio_613910-19581.jpg",              imageAlt: "female tattoo artist occult symbolism"
+              id: "3",              name: "Ash",              role: "Gothic & Curse Designs",              imageSrc: "http://img.b2bpic.net/free-photo/dilligent-focused-tattoo-artist-is-creating-new-tattoo-young-woman-s-hand-tatao-studio_613910-19581.jpg",              imageAlt: "female tattoo artist occult symbolism"
             },
             {
               id: "4",              name: "Vex",              role: "Dark Art & Symbolism",              imageSrc: "http://img.b2bpic.net/free-photo/close-up-portrait-tattooed-male-barber-cuts-beard-black-male_613910-1462.jpg",              imageAlt: "tattoo artist dark studio atmosphere"
@@ -214,9 +214,9 @@ export default function LandingPage() {
           useInvertedBackground={false}
           tag="Studio"
           tagIcon={MapPin}
-          names=[
+          names={[
             "📍 123 Shadow Street, Downtown District",            "📞 (555) 867-5309",            "📧 marks@cursemarks.studio",            "🕐 Tue-Sat: 12pm-9pm | Sun: 1pm-6pm"
-          ]
+          ]}
           speed={30}
           showCard={true}
         />
