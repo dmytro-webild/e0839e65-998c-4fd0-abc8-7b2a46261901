@@ -50,6 +50,7 @@ export default function LandingPage() {
           imageAlt="Cursemarks Tattoo Studio"
           buttonAnimation="slide-up"
           showDimOverlay={false}
+          titleClassName="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight"
         />
       </div>
 
