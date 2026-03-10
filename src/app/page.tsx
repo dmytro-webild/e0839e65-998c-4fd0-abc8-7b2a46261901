@@ -204,15 +204,13 @@ export default function LandingPage() {
               title: "Services",              items: [
                 { label: "Book Appointment", href: "booking" },
                 { label: "Custom Designs", href: "booking" },
-                { label: "Aftercare Guide", href: "aftercare" },
-                { label: "Contact Us", href: "contact" }
+                { label: "Aftercare Guide", href: "aftercare" }
               ]
             },
             {
               title: "Follow",              items: [
                 { label: "Instagram", href: "https://www.instagram.com/cursemarkz_tattoo?igsh=MW8zeml6N2plaXdreA==" },
-                { label: "TikTok", href: "https://tiktok.com/@cursemarks" },
-                { label: "Discord", href: "https://discord.gg/cursemarks" }
+                { label: "TikTok", href: "https://tiktok.com/@cursemarks" }
               ]
             }
           ]}
