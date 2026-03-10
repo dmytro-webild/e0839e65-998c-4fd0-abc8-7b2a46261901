@@ -157,7 +157,7 @@ export default function LandingPage() {
           metrics={[
             { icon: Users, label: "Satisfied Clients", value: "100+" },
             { icon: Award, label: "5 Stars Reviews ", value: "100+ " },
-            { icon: Zap, label: "Original Designs", value: "5000+" },
+            { icon: Zap, label: "Original Designs", value: "500+" },
             { icon: Heart, label: "Marks That Matter", value: "Every One" }
           ]}
           useInvertedBackground={false}
