@@ -44,7 +44,7 @@ export default function LandingPage() {
 
       <div id="hero" data-section="hero">
         <HeroOverlay
-          title="Marks that stay. Stories that haunt."
+          title=""
           description="Premium tattoo studio specializing in blackwork, fine line, gothic, and curse-inspired designs."
           buttons={[
             { text: "Book Your Mark", onClick: handleBooking },
