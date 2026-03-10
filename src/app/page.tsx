@@ -42,15 +42,15 @@ export default function LandingPage() {
 
       <div id="hero" data-section="hero">
         <HeroLogoBillboard
-          logoText="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AlavLWOelEmQkqFRvw6DCMXOiw/uploaded-1773171676236-ae47sr53.png"
+          logoText=""
           description="Marks that stay. Stories that haunt."
           buttons={[
             { text: "Book Your Mark", href: "booking" },
             { text: "View Gallery", href: "gallery" }
           ]}
           background={{ variant: "plain" }}
-          imageSrc="http://img.b2bpic.net/free-vector/chicano-tattoo-vintage-template_225004-1495.jpg"
-          imageAlt="blackwork tattoo close-up detailed ink"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AlavLWOelEmQkqFRvw6DCMXOiw/uploaded-1773171676236-ae47sr53.png"
+          imageAlt="Cursemarks Tattoo Studio Logo"
           mediaAnimation="slide-up"
           frameStyle="card"
           buttonAnimation="slide-up"
