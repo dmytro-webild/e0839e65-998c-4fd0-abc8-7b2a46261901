@@ -45,7 +45,7 @@ export default function LandingPage() {
           logoText="asset://logo"
           description="Marks that stay. Stories that haunt."
           buttons={[
-            { text: "Book Appointment", href: "booking" },
+            { text: "Book Your Mark", href: "booking" },
             { text: "View Gallery", href: "gallery" }
           ]}
           background={{ variant: "plain" }}
